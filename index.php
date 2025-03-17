@@ -108,9 +108,8 @@ $products = [
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h1>Give Your Workout <br> A New Style!</h1>
-                    <p>Success isn't always about greatness. It;s about consistency. Consistent <br> hard work gains
-                        success. Greatness will come.</p>
+                    <h1>Place to Find<br> Your Keyboard!</h1>
+                    <p>Type More Comfortable, Perform Better</p>
                     <a href="" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
@@ -211,19 +210,16 @@ $products = [
         <div class="small-container">
             <div class="row">
                 <div class="col-5">
-                    <img src="images/logo-godrej.png">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/logo-oppo.png">
+                    <img src="https://www.vhv.rs/dpng/d/423-4238973_hd-razer-logo-png-razer-logo-transparent-png.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/logo-coca-cola.png">
+                    <img src="https://ajazzbrand.com/cdn/shop/files/9a0537a0adf6b8acf006eda3f9ea0e7f_62e7c330-bbcf-4593-b230-99901acc0ba8.webp?v=1721722582">
                 </div>
                 <div class="col-5">
-                    <img src="images/logo-paypal.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png">
+                    <img src="https://langtustore.com/cdn/shop/files/LANGTU_Logo_03_a9197bec-2e92-41c4-adec-ecadce036a06_140x.png?v=1623051834">
                 </div>
             </div>
         </div>
@@ -234,39 +230,29 @@ $products = [
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
+                    <h3>Mata Kuliah</h3>
+                    <p>Pemrograman Web II</p>
                 </div>
                 <div class="footer-col-2">
                     <img src="images/logo-white.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    <p>Place to Find Your Keyboard.
                     </p>
                 </div>
                 <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                    <h3>Adrian Bintang Saputera</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <li>2310817110006</li>
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Follow Us</h3>
+                    <h3>Muhammad Azrianzan</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
+                        <li>2310817210003</li>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020 - Samwit Adhikary</p>
+            <p class="copyright">Copyright 2025 - Adrian Bintang Saputera, Muhammad Azrianzan</p>
         </div>
     </div>
 
