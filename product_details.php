@@ -157,8 +157,8 @@ $products = [
     <div class="small-container">
         <div class="row">
             <div class="col-4">
-                <img src="images/product-9.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lmydcgskg5cv41">
+                <h4>Logitech MX Mechanical Mini</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -166,11 +166,11 @@ $products = [
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>Rp2.369.000</p>
             </div>
             <div class="col-4">
-                <img src="images/product-10.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="https://ae01.alicdn.com/kf/S6cf28eb1cba84a1da76cbc49269009e51.jpg">
+                <h4>Langtu GK65</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -178,11 +178,11 @@ $products = [
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>Rp459.000</p>
             </div>
             <div class="col-4">
-                <img src="images/product-11.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="https://ajazzstore.com/cdn/shop/files/203A9818.jpg?v=1734504850">
+                <h4>Ajazz AK820 Pro</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -190,11 +190,11 @@ $products = [
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>Rp820.000</p>
             </div>
             <div class="col-4">
-                <img src="images/product-12.jpg">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="https://ajazzstore.com/cdn/shop/files/IMG_8316.png?v=1725936447">
+                <h4>Ajazz AK980</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -202,7 +202,7 @@ $products = [
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p>$50.00</p>
+                <p>Rp1.029.000</p>
             </div>
         </div>
     </div>
