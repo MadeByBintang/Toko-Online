@@ -20,9 +20,9 @@ $products = [
 
     [
         "id" => 2,
-        "nama" => "Mouse Logitech G Pro X Superlight",
-        "harga" => "Rp1.699.000",
-        "deskripsi" => "Mouse gaming ringan dengan sensor HERO.",
+        "nama" => "Neo65CU",
+        "harga" => "Rp2.699.000",
+        "deskripsi" => "Keyboard alu mahal",
         "gambar" => "https://ae01.alicdn.com/kf/H3836f0628d4f41efbfffe4440660d70cI.jpg",
         "stok" => 15
     ],
