@@ -158,7 +158,7 @@ $products = [
             <div class="row">
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>"Keyboard mechanical ini benar-benar mengubah pengalaman mengetik saya! Tombolnya responsif dan nyaman digunakan, bahkan untuk sesi mengetik panjang. Suara 'clicky'-nya sangat memuaskan dan membuat saya semakin produktif."</p>
+                    <p>"Keyboard mechanical ini benar-benar mengubah pengalaman mengetik saya! Tombolnya responsif dan nyaman digunakan, bahkan untuk sesi mengetik panjang."</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -166,7 +166,6 @@ $products = [
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <img src="images/user-1.png">
                     <h3>Sean Parker</h3>
                 </div>
                 <div class="col-3">
@@ -180,7 +179,6 @@ $products = [
                         <i class="fa fa-star"></i>
                     </div>
                     <img src="images/user-2.png">
-                    <h3>Mike Smith</h3>
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
@@ -193,7 +191,6 @@ $products = [
                         <i class="fa fa-star"></i>
                     </div>
                     <img src="images/user-3.png">
-                    <h3>Mabel Joe</h3>
                 </div>
             </div>
         </div>
