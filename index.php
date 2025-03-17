@@ -120,7 +120,6 @@ $products = [
     </div>
 
     <!-- Feadtued Categories -->
-
     <div class="categories">
         <div class="small-container">
             <div class="row">
@@ -138,7 +137,6 @@ $products = [
     </div>
 
     <!-- Featured Products -->
-
     <div class="small-container">
         <h2 class="title">Produk Unggulan</h2>
         <div class="row">
@@ -213,10 +211,10 @@ $products = [
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="https://www.vhv.rs/dpng/d/423-4238973_hd-razer-logo-png-razer-logo-transparent-png.png">
+                    <img src="https://www.citypng.com/public/uploads/preview/razer-gaming-logo-hd-png-701751694773657zjfs7xzyd0.png">
                 </div>
                 <div class="col-5">
-                    <img src="https://ajazzbrand.com/cdn/shop/files/9a0537a0adf6b8acf006eda3f9ea0e7f_62e7c330-bbcf-4593-b230-99901acc0ba8.webp?v=1721722582">
+                    <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/8/19/4dd0cde8-cf60-4138-a73a-7bd91be48846.jpg">
                 </div>
                 <div class="col-5">
                     <img src="https://langtustore.com/cdn/shop/files/LANGTU_Logo_03_a9197bec-2e92-41c4-adec-ecadce036a06_140x.png?v=1623051834">
