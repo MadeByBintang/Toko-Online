@@ -211,7 +211,7 @@ $products = [
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Logitech_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="https://www.citypng.com/public/uploads/preview/razer-gaming-logo-hd-png-701751694773657zjfs7xzyd0.png">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Logo_Razer_2017.png?20170418020017">
                 </div>
                 <div class="col-5">
                     <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/8/19/4dd0cde8-cf60-4138-a73a-7bd91be48846.jpg">
