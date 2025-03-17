@@ -232,7 +232,7 @@ $products = [
                     <p>Pemrograman Web II</p>
                 </div>
                 <div class="footer-col-2">
-                    <h2>REDSTORE</h2>
+                    <h3>REDSTORE</h3>
                     <p>Place to Find Your Keyboard.
                     </p>
                 </div>
