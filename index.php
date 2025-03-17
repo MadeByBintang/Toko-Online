@@ -48,7 +48,7 @@ $products = [
     [
         "id" => 5,
         "nama" => "Langtu GK65",
-        "harga" => "Rp.459.000",
+        "harga" => "Rp459.000",
         "deskripsi" => "Keyboard Mechanical Affordable dengan Linear Gold Switch.",
         "gambar" => "https://ae01.alicdn.com/kf/S6cf28eb1cba84a1da76cbc49269009e51.jpg",
         "stok" => 6
@@ -57,7 +57,7 @@ $products = [
     [
         "id" => 6,
         "nama" => "Ajazz AK820 Pro",
-        "harga" => "Rp 820.000",
+        "harga" => "Rp820.000",
         "deskripsi" => "Keyboard Mechanical 75% dengan Ajazz Gift Switch.",
         "gambar" => "https://ajazzstore.com/cdn/shop/files/203A9818.jpg?v=1734504850",
         "stok" => 15
