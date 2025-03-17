@@ -40,7 +40,7 @@ $products = [
         "id" => 4,
         "nama" => "Logitech MX Mechanical Mini",
         "harga" => "Rp2.369.000",
-        "deskripsi" => "Keyboard Mechanical Minimalis yang Berfokus Pada Performa Oleh Logitech. ",
+        "deskripsi" => "Keyboard Mechanical Minimalis yang Berfokus Pada Performa Oleh Logitech.",
         "gambar" => "https://down-id.img.susercontent.com/file/id-11134207-7r98w-lmydcgskg5cv41",
         "stok" => 5
     ],
