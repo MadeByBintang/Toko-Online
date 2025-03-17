@@ -80,7 +80,7 @@ $products = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products | RedStore</title>
+    <title>Product | RedStore</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -91,7 +91,7 @@ $products = [
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.php"><img src="images/logo.png" alt="logo" width="125px"></a>
+                <a href="index.php"><h2>REDSTORE</h2></a>
             </div>
             <nav>
                 <ul id="MenuItems">
@@ -216,7 +216,7 @@ $products = [
                     <p>Pemrograman Web II</p>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logo-white.png">
+                    <h2>REDSTORE</h2>
                     <p>Place to Find Your Keyboard.
                     </p>
                 </div>
