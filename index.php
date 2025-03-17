@@ -158,8 +158,7 @@ $products = [
             <div class="row">
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        industry's standard dummy text.</p>
+                    <p>"Keyboard mechanical ini benar-benar mengubah pengalaman mengetik saya! Tombolnya responsif dan nyaman digunakan, bahkan untuk sesi mengetik panjang. Suara 'clicky'-nya sangat memuaskan dan membuat saya semakin produktif."</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -172,8 +171,7 @@ $products = [
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        industry's standard dummy text.</p>
+                    <p>"Saya sangat puas dengan keyboard wireless ini! Koneksinya stabil, dan saya tidak perlu repot dengan kabel yang berantakan."</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -186,8 +184,7 @@ $products = [
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        industry's standard dummy text.</p>
+                    <p>"Keyboard gaming ini luar biasa! Lampu RGB-nya bisa disesuaikan dengan mood saya, dan efek cahayanya bikin setup gaming saya terlihat keren banget. 10/10!</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
