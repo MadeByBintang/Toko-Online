@@ -12,10 +12,10 @@ $products = [
     [
         "id" => 1,
         "nama" => "Rexus Keyboard",
-        "harga" => "Rp3.147.000",
-        "deskripsi" => "Monitor gaming 165Hz dengan resolusi QHD.",
+        "harga" => "Rp400.000",
+        "deskripsi" => "Keyboard mechanical kere hore",
         "gambar" => "https://www.lg.com/content/dam/channel/wcms/id/monitor/gaming-ultragear/27gs60f-b/lg-com-pdp-kit_27gs60f_lg-ultragear_2024/gallery/02-gallery/ultragear-27gs60f-gallery-01-2010.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
-        "stok" => 5
+        "stok" => 9
     ],
 
     [
