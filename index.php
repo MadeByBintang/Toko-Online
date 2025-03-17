@@ -4,72 +4,72 @@ $products = [
         "id" => 0,
         "nama" => "Noir Timeless1800 96% Wireless",
         "harga" => "Rp1.223.000",
-        "deskripsi" => "Laptop gaming dengan performa tinggi dan desain keren.",
+        "deskripsi" => "Keyboard Mechanical Premium dengan Switch Linear KTT KU Orange dan Support Hingga 3 Tipe Koneksi.",
         "gambar" => "https://www.noirgear.com/cdn/shop/files/timeless_1800Artboard_2_5923a441-04f7-4cb6-9209-50fb5991dcb3.jpg?v=1740037943&width=360",
         "stok" => 10
     ],
 
     [
         "id" => 1,
-        "nama" => "Rexus Keyboard",
-        "harga" => "Rp400.000",
-        "deskripsi" => "Keyboard mechanical kere hore",
-        "gambar" => "https://www.lg.com/content/dam/channel/wcms/id/monitor/gaming-ultragear/27gs60f-b/lg-com-pdp-kit_27gs60f_lg-ultragear_2024/gallery/02-gallery/ultragear-27gs60f-gallery-01-2010.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
+        "nama" => "VOYAGER68 v2 Lite 65%",
+        "harga" => "Rp495.000",
+        "deskripsi" => "Keyboard Mechanical 67-key yang Affordable dengan Isotone Red Switch.",
+        "gambar" => "https://pressplayid.com/cdn/shop/files/Voyager68_V2_Lite.jpg?v=1730964657&width=600",
         "stok" => 9
     ],
 
     [
         "id" => 2,
-        "nama" => "Mouse Logitech G Pro X Superlight",
-        "harga" => "Rp1.699.000",
-        "deskripsi" => "Mouse gaming ringan dengan sensor HERO.",
-        "gambar" => "https://ae01.alicdn.com/kf/H3836f0628d4f41efbfffe4440660d70cI.jpg",
+        "nama" => "Nano68 Pro",
+        "harga" => "Rp1.389.000",
+        "deskripsi" => "Keyboard Mechanical Premium dengan Switch Magnetic yang Responsif dan Latensi Rendah.",
+        "gambar" => "https://madlionskeyboard.com/wp-content/uploads/2024/11/nano68-pro-ttc-600x600.jpg",
         "stok" => 15
     ],
 
     [
         "id" => 3,
-        "nama" => "Keyboard Razer Huntsman Mini",
-        "harga" => "Rp1.649.000",
-        "deskripsi" => "Keyboard mekanik optik dengan ukuran 60%.",
-        "gambar" => "https://down-id.img.susercontent.com/file/b045879d7cfde91a9ef5c929602f8020",
+        "nama" => "Razer Huntsman V3 Pro Mini",
+        "harga" => "Rp2.949.000",
+        "deskripsi" => "Keyboard Gaming Mechanical dengan Layout 60% dari Brand Ternama Razer.",
+        "gambar" => "https://assets2.razerzone.com/images/pnx.assets/a6e64e32c2201c68aeb3303e1c67c087/quick-actuation-adjustment-mode-500x500.webp",
         "stok" => 8
     ],
 
     [
         "id" => 4,
-        "nama" => "Intel I9-14900k",
-        "harga" => "Rp8.055.000",
-        "deskripsi" => "Laptop gaming dengan performa tinggi dan desain keren.",
-        "gambar" => "https://images.tokopedia.net/img/cache/700/VqbcmM/2024/1/7/83a3cff1-7f4e-4cc0-a323-138dbf8e1be9.jpg",
-        "stok" => 10
-    ],
-
-    [
-        "id" => 5,
-        "nama" => "AMD Ryzen Threadripper PRO 7995WX",
-        "harga" => "Rp. 189.460.000",
-        "deskripsi" => "Monitor gaming 165Hz dengan resolusi QHD.",
-        "gambar" => "https://images.tokopedia.net/img/cache/700/VqbcmM/2023/11/23/0036b9ea-07da-4150-bdd5-7697a3d1e247.jpg",
+        "nama" => "Logitech MX Mechanical Mini",
+        "harga" => "Rp2.369.000",
+        "deskripsi" => "Keyboard Mechanical Minimalis yang Berfokus Pada Performa Oleh Logitech. ",
+        "gambar" => "https://down-id.img.susercontent.com/file/id-11134207-7r98w-lmydcgskg5cv41",
         "stok" => 5
     ],
 
     [
+        "id" => 5,
+        "nama" => "Langtu GK65",
+        "harga" => "Rp.459.000",
+        "deskripsi" => "Keyboard Mechanical Affordable dengan Linear Gold Switch.",
+        "gambar" => "https://ae01.alicdn.com/kf/S6cf28eb1cba84a1da76cbc49269009e51.jpg",
+        "stok" => 6
+    ],
+
+    [
         "id" => 6,
-        "nama" => "AMD Ryzen 9 5950X",
-        "harga" => "Rp7.621.000",
-        "deskripsi" => "Mouse gaming ringan dengan sensor HERO.",
-        "gambar" => "https://images.tokopedia.net/img/cache/700/VqbcmM/2021/4/25/91dee19a-6eca-4154-8c96-da9c1a161eeb.jpg",
+        "nama" => "Ajazz AK820 Pro",
+        "harga" => "Rp 820.000",
+        "deskripsi" => "Keyboard Mechanical 75% dengan Ajazz Gift Switch.",
+        "gambar" => "https://ajazzstore.com/cdn/shop/files/203A9818.jpg?v=1734504850",
         "stok" => 15
     ],
 
     [
         "id" => 7,
-        "nama" => "AMD Ryzen 7 7800X3D",
-        "harga" => "Rp7.907.000",
-        "deskripsi" => "Keyboard mekanik optik dengan ukuran 60%.",
-        "gambar" => "https://images.tokopedia.net/img/cache/250-square/VqbcmM/2024/1/10/34dfbd99-bca3-4b2e-bbda-d12ee6957a41.jpg",
-        "stok" => 8
+        "nama" => "Ajazz AK980",
+        "harga" => "Rp1.029.000",
+        "deskripsi" => "Keyboard Mechanical 98% dengan Knob Metal dan Cyan Cloud Switch .",
+        "gambar" => "https://ajazzstore.com/cdn/shop/files/IMG_8316.png?v=1725936447",
+        "stok" => 7
     ]
 ];
 ?>
@@ -80,7 +80,7 @@ $products = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | Ecommerce Website Design</title>
+    <title>RedStore | Place to Find Your Keyboard</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
