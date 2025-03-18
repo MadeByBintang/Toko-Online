@@ -178,7 +178,7 @@ $products = [
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <img src="images/user-2.png">
+                    <h3>Mike Smith</h3>
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
@@ -190,7 +190,7 @@ $products = [
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <img src="images/user-3.png">
+                    <h3>Lois Horan</h3>
                 </div>
             </div>
         </div>
