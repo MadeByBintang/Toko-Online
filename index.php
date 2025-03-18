@@ -158,7 +158,7 @@ $products = [
             <div class="row">
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>"Keyboard mechanical ini benar-benar mengubah pengalaman mengetik saya! Tombolnya responsif dan nyaman digunakan, bahkan untuk sesi mengetik panjang."</p>
+                    <p>"Keyboard mechanical ini benar-benar mengubah pengalaman mengetik saya! Tombolnya responsif dan nyaman digunakan."</p>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
