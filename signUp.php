@@ -80,10 +80,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <script>
     document.getElementById('saldo').addEventListener('input', function(e) {
-      let value = e.target.value.replace(/[^0-9]/g, '');
+      let value = e.target.value.replace(/[^0-9]/g, ''); // Hanya angka
       e.target.value = new Intl.NumberFormat('id-ID').format(value);
+      e.target.dataset.rawValue = value; // Simpan angka asli tanpa titik
+    });
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+      let saldoInput = document.getElementById('saldo');
+      saldoInput.value = saldoInput.dataset.rawValue; // Pastikan data yang dikirim tanpa titik
     });
   </script>
+
 </body>
 
 </html>
