@@ -81,7 +81,7 @@ $products = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedStore | Place to Find Your Keyboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -99,10 +99,10 @@ $products = [
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="account.html">Login</a></li>
+                        <li><a href="signIn.php">Login</a></li>
                     </ul>
                 </nav>
             </div>
