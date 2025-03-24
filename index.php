@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $products = [
     [
         "id" => 0,
@@ -99,10 +101,15 @@ $products = [
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="signIn.php">Login</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <?php if (isset($_SESSION['user'])): ?>
+                            <li><a href="#">Halo, <?php echo htmlspecialchars($_SESSION['user']); ?></a></li>
+                            <li><a href="logout.php">Logout</a></li>
+                        <?php else: ?>
+                            <li><a href="signIn.php">Login</a></li>
+                        <?php endif; ?>
                     </ul>
                 </nav>
             </div>

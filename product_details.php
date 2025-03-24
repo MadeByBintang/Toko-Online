@@ -91,19 +91,18 @@ $products = [
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="index.php"><h2>REDSTORE</h2></a>
+                <a href="index.php">
+                    <h2>REDSTORE</h2>
+                </a>
             </div>
             <nav>
                 <ul id="MenuItems">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="account.php">Account</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
