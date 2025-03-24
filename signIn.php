@@ -64,7 +64,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <label for="password">Password</label>
           <input type="password" class="login" name="password" placeholder="Your Password" required />
 
-          <input type="hidden" name="login_date" value="<?php echo date('Y-m-d H:i:s'); ?>" />
           <input type="submit" class="login-btn" value="Login" />
         </form>
 
