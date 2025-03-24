@@ -92,7 +92,9 @@ $products = [
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.php"><h2>REDSTORE</h2></a>
+                    <a href="index.php">
+                        <h2>REDSTORE</h2>
+                    </a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -103,8 +105,6 @@ $products = [
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -151,7 +151,7 @@ $products = [
             <?php } ?>
         </div>
     </div>
-    
+
     <!-- Testimonial -->
     <div class="testimonial">
         <div class="small-container">
