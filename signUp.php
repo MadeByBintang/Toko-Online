@@ -1,3 +1,55 @@
+<?php
+session_start();
+
+// Inisialisasi pesan
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+unset($_SESSION['message']);
+
+// Proses sign-up
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = trim($_POST["name"]);
+  $email = trim($_POST["email"]);
+  $alamat = trim($_POST["alamat"]);
+  $tanggal_lahir = $_POST["tanggal_lahir"];
+  $saldo = $_POST["saldo"];
+  $password = $_POST["password"];
+
+  if (empty($name) || empty($email) || empty($alamat) || empty($tanggal_lahir) || empty($saldo) || empty($password)) {
+    $_SESSION['message'] = "Semua kolom harus diisi!";
+    header("Location: signUp.php");
+    exit();
+  }
+
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $_SESSION['message'] = "Format email tidak valid!";
+    header("Location: signUp.php");
+    exit();
+  }
+
+  if ($saldo < 0) {
+    $_SESSION['message'] = "Saldo tidak boleh negatif!";
+    header("Location: signUp.php");
+    exit();
+  }
+
+  $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+  // Simpan user ke dalam sesi
+  $_SESSION['users'][] = [
+    "name" => $name,
+    "email" => $email,
+    "alamat" => $alamat,
+    "tanggal_lahir" => $tanggal_lahir,
+    "saldo" => $saldo,
+    "password" => $hashedPassword
+  ];
+
+  $_SESSION['message'] = "Pendaftaran berhasil! Silakan login.";
+  header("Location: signIn.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +82,7 @@
           <input type="date" class="login" name="tanggal_lahir" required />
 
           <label>Saldo:</label>
-          <input type="number" class="login" name="saldo" required />
+          <input type="text" class="login" id="saldo" name="saldo" placeholder="Masukkan Saldo" required />
 
           <label>Password:</label>
           <input type="password" class="login" name="password" placeholder="Masukkan Password" required />
@@ -44,6 +96,23 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("saldo").addEventListener("input", function(e) {
+      // Ambil nilai tanpa karakter selain angka
+      let value = e.target.value.replace(/\D/g, "");
+
+      // Cegah angka kosong agar tidak error
+      if (value === "") {
+        e.target.value = "";
+        return;
+      }
+
+      // Format angka dengan pemisah ribuan
+      e.target.value = new Intl.NumberFormat("id-ID").format(parseInt(value, 10));
+    });
+  </script>
+
 </body>
 
 </html>

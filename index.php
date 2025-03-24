@@ -105,7 +105,7 @@ $products = [
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                         <?php if (isset($_SESSION['user'])): ?>
-                            <li><a href="#">Halo, <?php echo htmlspecialchars($_SESSION['user']); ?></a></li>
+                            <li><a href="#">Halo, <?php echo htmlspecialchars($_SESSION['user']['name'] ?? 'User'); ?></a></li>
                             <li><a href="logout.php">Logout</a></li>
                         <?php else: ?>
                             <li><a href="signIn.php">Login</a></li>

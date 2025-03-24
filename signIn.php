@@ -1,3 +1,50 @@
+<?php
+session_start();
+
+// Data pengguna default
+$defaultUser = [
+  "name" => "Admin",
+  "email" => "admin@redstore.com",
+  "alamat" => "Jl. Admin No.1",
+  "tanggal_lahir" => "2005-08-21",
+  "saldo" => 1000000,
+  "password" => password_hash("admin123", PASSWORD_DEFAULT)
+];
+
+// Menangani proses login
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+unset($_SESSION['message']);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email = trim($_POST["email"]);
+  $password = $_POST["password"];
+
+  // Cek jika user ada dalam sesi
+  if (isset($_SESSION['users'])) {
+    foreach ($_SESSION['users'] as $user) {
+      if ($user["email"] === $email && password_verify($password, $user["password"])) {
+        $_SESSION["logged_in"] = true;
+        $_SESSION["user"] = $user;
+        header("Location: index.php");
+        exit();
+      }
+    }
+  }
+
+  // Cek default user
+  if ($defaultUser["email"] === $email && password_verify($password, $defaultUser["password"])) {
+    $_SESSION["logged_in"] = true;
+    $_SESSION["user"] = $defaultUser;
+    header("Location: index.php");
+    exit();
+  }
+
+  $_SESSION['message'] = "Email atau password salah!";
+  header("Location: signIn.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +63,14 @@
     <div class="login-container">
       <div class="login-area">
         <h3>LOGIN TO REDSTORE</h3>
+
+        <?php if (!empty($message)): ?>
+          <p style="color: red; font-size: 14px; font-weight: bold; margin-bottom: 10px;">
+            <?php echo htmlspecialchars($message); ?>
+          </p>
+        <?php endif; ?>
+
+
         <form class="login-items" method="POST">
           <label>Email:</label>
           <input type="email" class="login" name="email" placeholder="Masukkan Email" required />
