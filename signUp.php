@@ -87,6 +87,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <label>Password:</label>
           <input type="password" class="login" name="password" placeholder="Masukkan Password" required />
 
+          <label for="birthdate">Birthdate</label>
+          <input type="date" class="login" name="birthdate" required
+
           <input type="submit" class="login-btn" value="Register" />
         </form>
 
