@@ -1,44 +1,3 @@
-<?php
-session_start();
-
-$usersFile = 'users.json';
-$users = file_exists($usersFile) ? json_decode(file_get_contents($usersFile), true) : [];
-
-$defaultUser = [
-  'email' => 'admin@example.com',
-  'password' => password_hash('admin123', PASSWORD_DEFAULT),
-  'name' => 'Admin',
-
-  'email' => 'adrianbintang3@gmail.com',
-  'password' => password_hash('adrian123', PASSWORD_DEFAULT),
-  'name' => 'Bintang'
-];
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $email = trim($_POST['email']);
-  $password = trim($_POST['password']);
-  $loginDate = date('Y-m-d H:i:s');
-
-  foreach ($users as $user) {
-    if ($user['email'] === $email && password_verify($password, $user['password'])) {
-      $_SESSION['user'] = $user['name'];
-      $_SESSION['login_date'] = $loginDate;
-      header("Location: index.php");
-      exit;
-    }
-  }
-
-  if ($email === $defaultUser['email'] && password_verify($password, $defaultUser['password'])) {
-    $_SESSION['user'] = $defaultUser['name'];
-    $_SESSION['login_date'] = $loginDate;
-    header("Location: index.php");
-    exit;
-  }
-
-  echo "<script>alert('Sign In gagal! Cek email atau password.');</script>";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,16 +17,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="login-area">
         <h3>LOGIN TO REDSTORE</h3>
         <form class="login-items" method="POST">
-          <label for="email">Email</label>
-          <input type="email" class="login" name="email" placeholder="your-email@gmail.com" required />
+          <label>Email:</label>
+          <input type="email" class="login" name="email" placeholder="Masukkan Email" required />
 
-          <label for="password">Password</label>
-          <input type="password" class="login" name="password" placeholder="Your Password" required />
+          <label>Password:</label>
+          <input type="password" class="login" name="password" placeholder="Masukkan Password" required />
 
           <input type="submit" class="login-btn" value="Login" />
         </form>
-
-        <p class="p">New to RedStore? <a class="a" href="signUp.php">Create an Account</a></p>
+        <p class="p">Belum punya akun? <a class="a" href="signUp.php">Daftar</a></p>
       </div>
     </div>
   </div>
