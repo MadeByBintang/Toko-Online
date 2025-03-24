@@ -5,6 +5,9 @@ session_start();
 $_SESSION["logged_in"] = null;
 $_SESSION["user"] = null;
 
-// Redirect ke halaman utama
-header("Location: index.php");
+// Alert dan redirect
+echo "<script>
+    alert('Anda telah logout.');
+    window.location.href = 'index.php';
+</script>";
 exit;

@@ -11,7 +11,7 @@ $defaultUser = [
   "password" => password_hash("admin123", PASSWORD_DEFAULT)
 ];
 
-// Menangani proses login
+// Menangani pesan login
 $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
 unset($_SESSION['message']);
 
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if ($user["email"] === $email && password_verify($password, $user["password"])) {
         $_SESSION["logged_in"] = true;
         $_SESSION["user"] = $user;
-        header("Location: index.php");
+        echo "<script>alert('Login berhasil!'); window.location.href = 'index.php';</script>";
         exit();
       }
     }
@@ -35,15 +35,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($defaultUser["email"] === $email && password_verify($password, $defaultUser["password"])) {
     $_SESSION["logged_in"] = true;
     $_SESSION["user"] = $defaultUser;
-    header("Location: index.php");
+    echo "<script>alert('Login berhasil!'); window.location.href = 'index.php';</script>";
     exit();
   }
 
   $_SESSION['message'] = "Email atau password salah!";
-  header("Location: signIn.php");
+  echo "<script>alert('Email atau password salah!'); window.location.href = 'signIn.php';</script>";
   exit();
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
