@@ -1,7 +1,7 @@
 <?php
 session_start();
+require_once "koneksi.php";
 
-// Data pengguna default
 $defaultUser = [
   "name" => "Admin",
   "email" => "admin@redstore.com",
@@ -11,7 +11,6 @@ $defaultUser = [
   "password" => password_hash("admin123", PASSWORD_DEFAULT)
 ];
 
-// Menangani proses login
 $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
 unset($_SESSION['message']);
 
@@ -19,19 +18,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = trim($_POST["email"]);
   $password = $_POST["password"];
 
-  // Cek jika user ada dalam sesi
-  if (isset($_SESSION['users'])) {
-    foreach ($_SESSION['users'] as $user) {
-      if ($user["email"] === $email && password_verify($password, $user["password"])) {
-        $_SESSION["logged_in"] = true;
-        $_SESSION["user"] = $user;
-        header("Location: index.php");
-        exit();
-      }
-    }
+  // Cari user berdasarkan email di database
+  $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+  $stmt->execute([$email]);
+  $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+  if ($user && password_verify($password, $user["password"])) {
+    $_SESSION["logged_in"] = true;
+    $_SESSION["user"] = $user;
+    header("Location: index.php");
+    exit();
   }
 
-  // Cek default user
+  // Fallback ke default user
   if ($defaultUser["email"] === $email && password_verify($password, $defaultUser["password"])) {
     $_SESSION["logged_in"] = true;
     $_SESSION["user"] = $defaultUser;

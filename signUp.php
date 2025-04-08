@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once("koneksi.php");
 
 // Inisialisasi pesan
 $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
@@ -26,27 +27,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
   }
 
-  if ($saldo < 0) {
-    $_SESSION['message'] = "Saldo tidak boleh negatif!";
+  // Bersihkan saldo dari titik pemisah
+  $saldo = str_replace('.', '', $saldo);
+  if (!is_numeric($saldo) || $saldo < 0) {
+    $_SESSION['message'] = "Saldo tidak valid!";
     header("Location: signUp.php");
     exit();
   }
 
+  $saldo = intval($saldo);
   $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-  // Simpan user ke dalam sesi
-  $_SESSION['users'][] = [
-    "name" => $name,
-    "email" => $email,
-    "alamat" => $alamat,
-    "tanggal_lahir" => $tanggal_lahir,
-    "saldo" => $saldo,
-    "password" => $hashedPassword
-  ];
+  try {
+    $sql = "INSERT INTO users (name, email, alamat, tanggal_lahir, saldo, password)
+            VALUES (?, ?, ?, ?, ?, ?)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([$name, $email, $alamat, $tanggal_lahir, $saldo, $hashedPassword]);
 
-  $_SESSION['message'] = "Pendaftaran berhasil! Silakan login.";
-  header("Location: signIn.php");
-  exit();
+    $_SESSION['message'] = "Pendaftaran berhasil! Silakan login.";
+    header("Location: signIn.php");
+    exit();
+  } catch (PDOException $e) {
+    $_SESSION['message'] = "Gagal mendaftar: " . $e->getMessage();
+    header("Location: signUp.php");
+    exit();
+  }
 }
 ?>
 
@@ -54,12 +59,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style-auth.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style-auth.css" />
   <script src="https://kit.fontawesome.com/c0e27fec68.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <title>Sign Up to RedStore</title>
 </head>
 
@@ -68,6 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-container">
       <div class="login-area">
         <h3>REGISTER TO REDSTORE</h3>
+        <?php if (!empty($message)) : ?>
+          <p class="error-message"><?= htmlspecialchars($message) ?></p>
+        <?php endif; ?>
         <form class="login-items" method="POST">
           <label>Name:</label>
           <input type="text" class="login" name="name" placeholder="Masukkan Nama" required />
@@ -99,20 +107,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <script>
     document.getElementById("saldo").addEventListener("input", function(e) {
-      // Ambil nilai tanpa karakter selain angka
       let value = e.target.value.replace(/\D/g, "");
-
-      // Cegah angka kosong agar tidak error
       if (value === "") {
         e.target.value = "";
         return;
       }
-
-      // Format angka dengan pemisah ribuan
       e.target.value = new Intl.NumberFormat("id-ID").format(parseInt(value, 10));
     });
   </script>
-
 </body>
 
 </html>
